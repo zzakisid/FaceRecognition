@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Face Recognition</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin: 10px; /* Added spacing between buttons */
+    }
+  </style>
+</head>
+<body>
+  <h1>FaceRecognition</h1>
+  <form action="/LiveFotage" method="post">
+    <button type="submit">LIVE CAMERA</button>
+  </form>
+
+  <form action="/VideoForm" method="get">
+    <button type="submit">RUN RECOGNITION ON VIDEO</button>
+  </form>
+  
+</body>
+</html>

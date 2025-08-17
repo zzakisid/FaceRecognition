@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Upload Video for Recognition</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+    button, input[type="file"] {
+      padding: 15px 30px;
+      font-size: 18px;
+      border-radius: 8px;
+      margin: 10px;
+    }
+    button {
+      background-color: #2196F3;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Upload a Video for Face Recognition</h1>
+
+  <form action="/RecordedVideo" method="post" enctype="multipart/form-data">
+    <input type="file" name="video_file" accept="video/*" required>
+    <br><br>
+    <button type="submit">Upload & Run</button>
+  </form>
+</body>
+</html>
